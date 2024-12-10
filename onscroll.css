@@ -1,0 +1,86 @@
+
+.onscroll-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.onscroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.onscroll-fade-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.onscroll-fade-left.onscroll-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.onscroll-fade-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.onscroll-fade-right.onscroll-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.onscroll-zoom {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.onscroll-zoom.onscroll-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.onscroll-fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.onscroll-fade-up.onscroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.onscroll-fade-down {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.onscroll-fade-down.onscroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media screen and (max-width: 768px) {
+    .onscroll-hidden {
+        transform: translateY(20px);
+    }
+
+    .onscroll-fade-left, .onscroll-fade-right {
+        transform: translateX(20px);
+    }
+
+    .onscroll-fade-up, .onscroll-fade-down {
+        transform: translateY(20px);
+    }
+}
